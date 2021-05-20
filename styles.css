@@ -37,6 +37,39 @@ blockquote {
 blockquote p{
     margin: 0;
 }
+blockquote {
+    position: relative;
+}
+
+.grid div:nth-child(2) blockquote::before {
+    border-width: 8px 16px 8px 0;
+    border-color: transparent lightblue transparent transparent;
+}
+
+.grid div:nth-child(2) blockquote::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.grid div:nth-child(1) blockquote::before {
+    border-width: 8px 0  8px 16px;
+    border-color: transparent transparent  transparent lightblue;
+}
+
+.grid div:nth-child(1) blockquote::before {
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
 
 .titel {
     text-align: center;
