@@ -1,5 +1,7 @@
 :root{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
+
+    --gold: #F7A823
 }
 
 body{
@@ -8,19 +10,72 @@ body{
 }
 
 h1, h2, h3 {
-    background-color: gold;
+    background-color: var(--gold);
     padding: 1em;
     border-radius: 0.5em;
     border: 0;
-    margin-bottom: 0.6em; 
+    margin-bottom: 2rem; 
+    color: white;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px #ccc;
 }
 
-p {
-    margin-bottom: 4rem;
+hr {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    box-shadow: 5px 5px 5px #ccc;
 }
+
+blockquote {
+    background-color: lightblue;
+    padding: 2em;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+blockquote p{
+    margin: 0;
+}
+
+.titel {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+    border: 1px solid #ccc;
+    border-left: 8vw solid var(--gold);
+    padding: 2rem;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+.titel h1 {
+    background-color: transparent;
+    color: var(--gold);
+    font-weight: bold;
+    box-shadow: none;
+}
+
+.titel h2 {
+    background-color: transparent;
+    color: var(--gold);
+    font-weight: bold;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 4rem;
+    box-shadow: none;
+}
+
+.logos{
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between 
+}
+
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;  
-    gap: 2rem;   
+    gap: 3rem;   
 }
